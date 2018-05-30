@@ -1,0 +1,10 @@
+syntax = "proto3";
+package data;
+
+// The request message containing the user's name.
+message Data{
+  bytes Key  = 2;
+  bytes Value= 3;
+  int64 Version=4;//set will return only version
+}
+
